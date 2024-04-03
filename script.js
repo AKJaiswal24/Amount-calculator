@@ -23,13 +23,25 @@ function cal(a){
     document.getElementsByName("fif-amt")[index].value = fifty ;
 
 
+    var twe = document.getElementsByName("twe-qty")[index].value;
+    var twenty = 20 * twe ;
+    document.getElementsByName("twe-amt")[index].value = twenty ;
+
+
+
+    var ten = document.getElementsByName("ten-qty")[index].value;
+    var tenth = 10 * ten ;
+    document.getElementsByName("ten-amt")[index].value = tenth ;
+
+
+
 
     var coins = document.getElementsByName("coin-amt")[index].value;
 
 
 
-    var tot_qty = + (hun5) + + (hun2) + + (hun) + + (fif);
+    var tot_qty = + (hun5) + + (hun2) + + (hun) + + (fif) + + (twe) + +(ten);
     document.getElementsByName("tot_qty")[index].value = tot_qty ;
-    var total_amt = + (hund5 ) + + (hund2) + + (hund) + + (fifty) + + (coins) ;
+    var total_amt = + (hund5 ) + + (hund2) + + (hund) + + (fifty) + +(twenty) + +(tenth) + + (coins) ;
     document.getElementsByName("tot_amt")[index].value = total_amt ;
 }
